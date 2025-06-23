@@ -36,7 +36,31 @@ Insert a new node by minimizing the number of changes to the tree. The tree is t
 
 Note: do not add the node if it already exists in the tree.
 
-References:
+
+## Deletion
+
+The implementation will minimize changes to the BST. The solution is to replace the target node with a proper child. According to the number of its children, we should consider three different cases:
+
+1. Target has no children. Remove the child.
+2. Target has one child 
+3. Target has two children
+
+
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+
+1. Search for the node.
+2. If the node is found.
+
+
+## Inorder Successor 
+
+Given the root of a binary search tree and a node p in it, return the in-order successor of that node in the BST. If the given node has no in-order successor in the tree, return null.
+
+The successor of a node p is the node with the smallest key greater than p.val.
+
+
+
+### References:
 
 https://www.enjoyalgorithms.com/blog/insertion-in-binary-search-tree
 
